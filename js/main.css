@@ -469,9 +469,9 @@ hr {
       .tile.tile-8192 .tile-inner {
         font-size: 15px; } }
   .tile.tile-16384 .tile-inner {
-    color: #daa520;
-    background: #c71584;
-    text-shadow: 1px 1px 4px #fff8dc;
+    color: #00fdff;
+    background: #445712;
+    text-shadow: 1px 1px 4px #12d5b1;
     font-size: 30px; }
   .tile.tile-32768 .tile-inner {
     color: gold;
