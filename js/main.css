@@ -473,6 +473,26 @@ hr {
     background: #c71584;
     text-shadow: 1px 1px 4px #fff8dc;
     font-size: 30px; }
+  .tile.tile-32768 .tile-inner {
+    color: gold;
+    background: black;
+    text-shadow: 1px 1px 4px #f1fb05;
+    font-size: 30px; }
+  .tile.tile-65536 .tile-inner {
+    color: #1b16a9;
+    background: #ecc79a;
+    text-shadow: 1px 1px 4px #fb16e9;
+    font-size: 30px; }
+  .tile.tile-131072 .tile-inner {
+    color: #0a1019;
+    background: #01ff4f;
+    text-shadow: 1px 1px 4px #3a4049;
+    font-size: 30px; }
+  .tile.tile-262144 .tile-inner {
+    color: #f41a07;
+    background: #bdbff0;
+    text-shadow: 1px 1px 4px #fcb404;
+    font-size: 30px; }
     @media screen and (max-width: 520px) {
       .tile.tile-super .tile-inner {
         font-size: 15px; } }
