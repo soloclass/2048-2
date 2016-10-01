@@ -12,6 +12,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 	this.inputManager.on("save", this.save.bind(this));
 	this.inputManager.on("undo", this.undo.bind(this));
 	this.inputManager.on("restore", this.restore.bind(this));
+	this.inputManager.on("superrestart", this.superrestart.bind(this));
 
 	this.setup();
 }
@@ -92,6 +93,14 @@ GameManager.prototype.save = function() {
 		this.storageManager.saveGameState(this.serialize());
 	}
 };
+
+GameManager.prototype.superrestart = function() {
+	if (this.over) {
+		this.restart();
+		this.reload(this.storageManager.restoreGameState());
+	}
+};
+
 
 GameManager.prototype.restore = function() {
 	this.reload(this.storageManager.restoreGameState());

@@ -59,10 +59,16 @@ KeyboardInputManager.prototype.listen = function () {
     if (self.targetIsInput(event)) return;
 
 	if (modifiers && (event.ctrlKey == event.ctrlKey)) {
+		// q
+		if (event.which === 81)
+			self.emit("superrestart");
+		// r
 		if (event.which === 82)
 			self.emit("restore");
+		// s
 		else if (event.which === 83)
 			self.emit("save");
+		// z
 		else if (event.which === 90)
 			self.emit("undo");
 		return;
