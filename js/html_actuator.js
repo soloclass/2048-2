@@ -1,4 +1,5 @@
-var HI_SQUARE=16392;
+// 32678, 65536, 131072, 262144
+var HI_SQUARE=262144;
 
 function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
