@@ -218,9 +218,9 @@ hr {
   z-index: 100;
   padding-top: 40px;
   text-align: center;
-  -webkit-animation: fade-in 800ms ease 1200ms;
-  -moz-animation: fade-in 800ms ease 1200ms;
-  animation: fade-in 800ms ease 1200ms;
+  -webkit-animation: fade-in 80ms ease 120ms;
+  -moz-animation: fade-in 80ms ease 120ms;
+  animation: fade-in 80ms ease 120ms;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
   animation-fill-mode: both; }
@@ -266,16 +266,16 @@ hr {
   .game-message.game-won, .game-message.game-over {
     display: block; }
     .game-message.game-won p, .game-message.game-over p {
-      -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
-      -moz-animation: slide-up 1.5s ease-in-out 2500ms;
-      animation: slide-up 1.5s ease-in-out 2500ms;
+      -webkit-animation: slide-up 150ms ease-in-out 250ms;
+      -moz-animation: slide-up 150ms ease-in-out 250ms;
+      animation: slide-up 150ms ease-in-out 250ms;
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
     .game-message.game-won .mailing-list, .game-message.game-over .mailing-list {
-      -webkit-animation: fade-in 1.5s ease-in-out 2500ms;
-      -moz-animation: fade-in 1.5s ease-in-out 2500ms;
-      animation: fade-in 1.5s ease-in-out 2500ms;
+      -webkit-animation: fade-in 150ms ease-in-out 250ms;
+      -moz-animation: fade-in 150ms ease-in-out 250ms;
+      animation: fade-in 150ms ease-in-out 250ms;
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
       animation-fill-mode: both; }
@@ -685,9 +685,9 @@ hr {
     z-index: 100;
     padding-top: 40px;
     text-align: center;
-    -webkit-animation: fade-in 800ms ease 1200ms;
-    -moz-animation: fade-in 800ms ease 1200ms;
-    animation: fade-in 800ms ease 1200ms;
+    -webkit-animation: fade-in 80ms ease 120ms;
+    -moz-animation: fade-in 80ms ease 120ms;
+    animation: fade-in 80ms ease 120ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
@@ -733,16 +733,16 @@ hr {
     .game-message.game-won, .game-message.game-over {
       display: block; }
       .game-message.game-won p, .game-message.game-over p {
-        -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
-        -moz-animation: slide-up 1.5s ease-in-out 2500ms;
-        animation: slide-up 1.5s ease-in-out 2500ms;
+        -webkit-animation: slide-up 150ms ease-in-out 250ms;
+        -moz-animation: slide-up 150ms ease-in-out 250ms;
+        animation: slide-up 150ms ease-in-out 250ms;
         -webkit-animation-fill-mode: both;
         -moz-animation-fill-mode: both;
         animation-fill-mode: both; }
       .game-message.game-won .mailing-list, .game-message.game-over .mailing-list {
-        -webkit-animation: fade-in 1.5s ease-in-out 2500ms;
-        -moz-animation: fade-in 1.5s ease-in-out 2500ms;
-        animation: fade-in 1.5s ease-in-out 2500ms;
+        -webkit-animation: fade-in 150ms ease-in-out 250ms;
+        -moz-animation: fade-in 150ms ease-in-out 250ms;
+        animation: fade-in 150ms ease-in-out 250ms;
         -webkit-animation-fill-mode: both;
         -moz-animation-fill-mode: both;
         animation-fill-mode: both; }
@@ -943,6 +943,7 @@ hr {
       font-size: 15px;
       font-family: Consolas, "Liberation Mono", Courier, monospace;
       text-align: center; }
+      
   .btc-donate:hover .address, .btc-donate .address:hover .address {
     opacity: 1;
     top: -45px;
