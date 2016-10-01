@@ -8,7 +8,7 @@ html, body {
   font-size: 18px; }
 
 body {
-  margin: 80px 0; }
+  margin: 0 0 80px 0; }
 
 input {
   display: inline-block;
@@ -119,7 +119,8 @@ h1.title {
     animation: move-up 600ms ease-in;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
-    animation-fill-mode: both; }
+    animation-fill-mode: both;
+    }
 
 .score-container:after {
   content: "Score"; }
@@ -218,12 +219,15 @@ hr {
   z-index: 100;
   padding-top: 40px;
   text-align: center;
+  /*
   -webkit-animation: fade-in 800ms ease 1200ms;
   -moz-animation: fade-in 800ms ease 1200ms;
   animation: fade-in 800ms ease 1200ms;
   -webkit-animation-fill-mode: both;
   -moz-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  */ 
+  }
   .game-message p {
     font-size: 60px;
     font-weight: bold;
@@ -266,19 +270,21 @@ hr {
   .game-message.game-won, .game-message.game-over {
     display: block; }
     .game-message.game-won p, .game-message.game-over p {
-      -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
-      -moz-animation: slide-up 1.5s ease-in-out 2500ms;
-      animation: slide-up 1.5s ease-in-out 2500ms;
+      -webkit-animation: slide-up 15ms ease-in-out 25ms;
+      -moz-animation: slide-up 15ms ease-in-out 25ms;
+      animation: slide-up 15ms ease-in-out 25ms;
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
-      animation-fill-mode: both; }
+      animation-fill-mode: both;
+      }
     .game-message.game-won .mailing-list, .game-message.game-over .mailing-list {
-      -webkit-animation: fade-in 1.5s ease-in-out 2500ms;
-      -moz-animation: fade-in 1.5s ease-in-out 2500ms;
-      animation: fade-in 1.5s ease-in-out 2500ms;
+      -webkit-animation: fade-in 15ms ease-in-out 25ms;
+      -moz-animation: fade-in 15ms ease-in-out 25ms;
+      animation: fade-in 15ms ease-in-out 25ms;
       -webkit-animation-fill-mode: both;
       -moz-animation-fill-mode: both;
-      animation-fill-mode: both; }
+      animation-fill-mode: both;
+      }
 
 .grid-container {
   position: absolute;
@@ -685,9 +691,9 @@ hr {
     z-index: 100;
     padding-top: 40px;
     text-align: center;
-    -webkit-animation: fade-in 800ms ease 1200ms;
-    -moz-animation: fade-in 800ms ease 1200ms;
-    animation: fade-in 800ms ease 1200ms;
+    -webkit-animation: fade-in 80ms ease 120ms;
+    -moz-animation: fade-in 80ms ease 120ms;
+    animation: fade-in 80ms ease 120ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
@@ -733,16 +739,16 @@ hr {
     .game-message.game-won, .game-message.game-over {
       display: block; }
       .game-message.game-won p, .game-message.game-over p {
-        -webkit-animation: slide-up 1.5s ease-in-out 2500ms;
-        -moz-animation: slide-up 1.5s ease-in-out 2500ms;
-        animation: slide-up 1.5s ease-in-out 2500ms;
+        -webkit-animation: slide-up 15ms ease-in-out 25ms;
+        -moz-animation: slide-up 15ms ease-in-out 25ms;
+        animation: slide-up 15ms ease-in-out 25ms;
         -webkit-animation-fill-mode: both;
         -moz-animation-fill-mode: both;
         animation-fill-mode: both; }
       .game-message.game-won .mailing-list, .game-message.game-over .mailing-list {
-        -webkit-animation: fade-in 1.5s ease-in-out 2500ms;
-        -moz-animation: fade-in 1.5s ease-in-out 2500ms;
-        animation: fade-in 1.5s ease-in-out 2500ms;
+        -webkit-animation: fade-in 15ms ease-in-out 25ms;
+        -moz-animation: fade-in 15ms ease-in-out 25ms;
+        animation: fade-in 15ms ease-in-out 25ms;
         -webkit-animation-fill-mode: both;
         -moz-animation-fill-mode: both;
         animation-fill-mode: both; }
@@ -1045,9 +1051,9 @@ hr {
     margin-top: 10px; } }
 .app-notice {
   position: relative;
-  -webkit-animation: pop-in-big 700ms ease 2s both;
-  -moz-animation: pop-in-big 700ms ease 2s both;
-  animation: pop-in-big 700ms ease 2s both;
+  -webkit-animation: pop-in-big 70ms ease 200ms both;
+  -moz-animation: pop-in-big 70ms ease 200ms both;
+  animation: pop-in-big 70ms ease 200ms both;  */
   background: #edc53f;
   color: white;
   padding: 18px;
@@ -1073,8 +1079,8 @@ hr {
     color: white; }
   @media screen and (max-width: 520px) {
     .app-notice {
-      -webkit-animation: pop-in-small 700ms ease 2s both;
-      -moz-animation: pop-in-small 700ms ease 2s both;
-      animation: pop-in-small 700ms ease 2s both;
+      -webkit-animation: pop-in-small 70ms ease 200ms both;
+      -moz-animation: pop-in-small 70ms ease 200ms both;
+      animation: pop-in-small 70ms ease 200ms both;
       margin-top: 10px;
       height: 76px; } }

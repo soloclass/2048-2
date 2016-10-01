@@ -12,7 +12,7 @@ window.requestAnimationFrame(function () {
     noticeClose.addEventListener("click", function () {
       notice.parentNode.removeChild(notice);
       storage.setNoticeClosed(true);
-      ga("send", "event", "notice", "closed");
+//      ga("send", "event", "notice", "closed");
     });
   }
 });
