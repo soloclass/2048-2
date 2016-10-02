@@ -2,7 +2,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 	this.size = size; // Size of the grid
 	this.inputManager = new InputManager;
 	this.storageManager = new StorageManager;
-	this.actuator = new Actuator;
+	this.actuator = new Actuator(this.tileUpdater.bind(this));
 
 	this.startTiles = 2;
 
@@ -42,7 +42,7 @@ GameManager.prototype.setup = function() {
 	// Reload the game from a previous game if present
 	if (previousState) {
 		this.grid = new Grid(previousState.grid.size, previousState.grid.cells); // Reload
-																					// grid
+		// grid
 		this.score = previousState.score;
 		this.over = previousState.over;
 		this.won = previousState.won;
@@ -101,7 +101,6 @@ GameManager.prototype.superrestart = function() {
 	}
 };
 
-
 GameManager.prototype.restore = function() {
 	this.reload(this.storageManager.restoreGameState());
 };
@@ -110,12 +109,11 @@ GameManager.prototype.undo = function() {
 	this.reload(this.storageManager.undo());
 };
 
-
 GameManager.prototype.reload = function(previousState) {
 	// Reload from stored state if present
 	if (previousState) {
 		this.grid = new Grid(previousState.grid.size, previousState.grid.cells); // Reload
-																					// grid
+		// grid
 		this.score = previousState.score;
 		this.over = previousState.over;
 		this.won = previousState.won;
@@ -130,7 +128,6 @@ GameManager.prototype.reload = function(previousState) {
 		terminated : this.isGameTerminated()
 	});
 };
-
 
 // Sends the updated grid to the actuator
 GameManager.prototype.actuate = function() {
@@ -182,6 +179,11 @@ GameManager.prototype.moveTile = function(tile, cell) {
 	this.grid.cells[cell.x][cell.y] = tile;
 	tile.updatePosition(cell);
 };
+
+GameManager.prototype.tileUpdater = function(tile, newvalue) {
+	var pos = { x: tile.x, y : tile.y };
+	this.grid.insertTile(new Tile(pos, newvalue));
+}
 
 // Move tiles on the grid in the specified direction
 GameManager.prototype.move = function(direction) {
