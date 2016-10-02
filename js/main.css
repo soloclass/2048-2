@@ -8,9 +8,33 @@ html, body {
   font-size: 18px; }
 
 body {
-  margin: 80px 0; }
+  margin: 10px 0; }
 
-input {
+.invisible {
+	display: none;
+}
+
+.editbox {
+	display: block;
+	position: fixed;
+	padding: 5px;
+	background-color: #f5f4e8;
+  color: #776e65;
+	z-index: 1;
+	left: 10px;
+	top: 10px;
+	width: auto;
+}
+
+input[type=number] {
+  border-radius: 3px;
+  padding: 3 5px;
+  font-size: 1.3em;
+  cursor: crosshair;	
+	background-color: #f0f0d8;
+}
+
+input:not([type=number]) {
   display: inline-block;
   background: #8f7a66;
   border-radius: 3px;
